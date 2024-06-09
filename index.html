@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto ResidentEvil - Semana do Zero ao Programador Contratado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/estilos.css">
+  <link rel="stylesheet" href="./src/css/responsivo.css">
+  <style>
+    header img {
+      width: 300px;
+      margin-top: 1px;
+      height: 90px;
+    }
+
+    .nome .highlight {
+      color: #8B0000;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header class="cabecalho">
+    <h1><img src="./src/imagens/Resident Evil 2.png" alt="RE2Remake"></h1>
+  </header>
+  <main class="personagens-slider">
+    <button class="btn-seta btn-voltar" id="btn-voltar">
+      <img src="./src/imagens/seta.png" alt="seta para voltar a imagem" />
+    </button>
+
+    <ul class="lista-personagens">
+      <li class="cartao selecionado fundo-1">
+        <h2 class="nome"><span class="highlight">L</span>eon.<span class="highlight">K</span>ennedy</h2>
+        <img class="imagem-personagem" src="src/imagens/Leon.jpg" alt="Leon" />
+
+        <div class="descricao">
+          <h3 class="titulo">Descrição</h3>
+          <p class="texto">
+            Leon Scott Kennedy (レオン・スコット・ケネディ) é um agente americano da D.S.O, divisão essa que ajudou a
+            criar ao lado do Presidente dos Estados Unidos, tendo um cargo de muita confiança e respeito das
+            altas autoridades dos Estados Unidos, tendo sido amigo do falecido Presidente Adam Benford.
+            Antes disso, Leon serviu como policial pelo Departamento de Policia de Raccoon City(R.P.D) por
+            apenas um dia. Ele se interessou em entrar para a policia depois de saber sobre os estranhos
+            eventos que aconteceu em Arklay Mountains, no ano de 1996. Depois do Incidente de Raccoon City,
+            ele recebeu uma oferta tentadora e foi instruído a prestar serviços para o governo dos Estados
+            Unidos pela US-STRATCOM até 2011.
+          </p>
+        </div>
+      </li>
+      <li class="cartao fundo-2">
+        <h2 class="nome"><span class="highlight">A</span>da <span class="highlight">W</span>ong</h2>
+        <img class="imagem-personagem" src="src/imagens/Ada Wong.jpg" alt="Ada" />
+
+        <div class="descricao">
+          <h3 class="titulo">Descrição</h3>
+          <p class="texto">
+            Ada Wong (エイダ・ウォン) ' é o pseudônimo de uma espiã americana-chinesa, que de outra forma não sabemos se este
+            é
+            seu verdadeiro nome. Inicialmente uma agente privada, Ada foi atraída para o mundo da espionagem quando
+            ela
+            foi recrutada por uma empresa rival da Umbrella Corporation.
+          </p>
+        </div>
+      </li>
+      <li class="cartao fundo-3">
+        <h2 class="nome"><span class="highlight">C</span>laire <span class="highlight">R</span>edfield</h2>
+        <img class="imagem-personagem" src="src/imagens/Claire.jpg" alt="Claire" />
+
+        <div class="descricao">
+          <h3 class="titulo">Descrição</h3>
+          <p class="texto">
+            Claire Redfield (クレア・レッドフィールド) é uma ativista de uma organização de direitos humanos chamada TerraSave
+            desde
+            2005, e a irmã mais nova de Chris Redfield e tem muito orgulho do trabalho do irmão, desde a época dos
+            S.T.A.R.S. Ela tem personalidade forte e mesmo sendo somente uma civil, ela sabe manejar armas e lockpicks
+            muito bem, graças às lições que aprendeu com o irmão mais velho. Claire levava uma vida perfeitamente
+            normal, sendo uma estudante apaixonada por motocicletas, até o repentino desaparecimento de Chris. Ela
+            decidiu ir até Raccoon City tentar descobrir o paradeiro de seu irmão e se envolveu na trágica história da
+            cidade junto de Leon S. Kennedy. A partir daí, Claire se viu comovida com as vítimas da pesquisa ilegal e
+            do
+            bioterrorismo e se tornou uma ativista para combater esse tipo de atividade.
+
+          </p>
+        </div>
+      </li>
+      <li class="cartao fundo-4">
+        <h2 class="nome"><span class="highlight">S</span>herry <span class="highlight">B</span>irkin</h2>
+        <img class="imagem-personagem" src="src/imagens/Sherry.jpg" alt="Sherry" />
+
+        <div class="descricao">
+          <h3 class="titulo">Descrição</h3>
+          <p class="texto">
+            Sherry Birkin (シェリー・バーキン) é um agente federal americano ligado à Divisão de Operações de Segurança. Quando
+            criança, ela foi colocada sob custódia protetora após a morte de seus pais durante o Incidente de
+            Destruição
+            da Cidade de Raccoon. Durante o surto, Sherry foi infectada com o G-Virus, mas foi tratada com a vacina
+            logo
+            depois. Por causa de sua exposição ao vírus, Sherry ganhou habilidades regenerativas ao longo da vida.
+          </p>
+        </div>
+      </li>
+      <li class="cartao fundo-5">
+        <h2 class="nome"><span class="highlight">W</span>illiam <span class="highlight">B</span>irkin</h2>
+        <img class="imagem-personagem" src="src/imagens/William Birkin.jpg" alt="William" />
+
+        <div class="descricao">
+          <h3 class="titulo">Descrição</h3>
+          <p class="texto">
+            Dr. William Birkin (ウィリアム・バーキン) foi um virologista que trabalhou para a Umbrella Farmaceuticas entre as
+            décadas de 1970-1990. Um dos principais cientistas por trás do aperfeiçoamento do T-Vírus e descobridor do
+            Vírus Gólgota, ao qual era chefe do projeto de pesquisa, ele se voltou contra a Corporação Umbrella após
+            não
+            conseguir uma promoção para ser incluído em seu círculo de membros executivos, culminando com a empresa
+            realizando tentativas para impedi-lo de fechar um acordo não autorizado com os militares americanos que
+            acabaram servindo como um catalisador do Incidente de Destruição de Raccoon City. Birkin também era o
+            marido
+            de Annette Birkin e pai de Sherry Birkin.
+          </p>
+        </div>
+      </li>
+      <li class="cartao fundo-6">
+        <h2 class="nome"><span class="highlight">A</span>nette <span class="highlight">B</span>irkin</h2>
+        <img class="imagem-personagem" src="./src/imagens/Annette Birkin.jpg" alt="Annette" />
+
+        <div class="descricao">
+          <h3 class="titulo">Descrição</h3>
+          <p class="texto">
+            Dra Annette Birkin (アネット・バーキン) foi uma pesquisadora do NEST, uma das instalações da Umbrella Corporation;
+            durante os seus trabalhos ela iniciou um relacionamento com o seu chefe William Birkin, os dois se casaram
+            e
+            um tempo depois (dois anos antes da descoberta do G-Vírus) Annette deu a luz à Sherry Birkin.
+          </p>
+        </div>
+      </li>
+    </ul>
+
+    <button class="btn-seta" id="btn-avancar">
+      <img src="./src/imagens/seta.png" alt="seta para avançar a imagem" />
+    </button>
+  </main>
+
+  <script src="./src/js/index.js"></script>
+
+</body>
+
+</html>
